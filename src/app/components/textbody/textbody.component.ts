@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Posts } from '../../Posts';
 
 @Component({
   selector: 'app-textbody',
@@ -6,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./textbody.component.css']
 })
 export class TextbodyComponent implements OnInit {
+
+  @Input() posts!: Text;
 
   constructor() { }
 

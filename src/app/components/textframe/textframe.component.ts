@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { TextserviceService } from '../../services/textservice.service';
+import { Posts } from '../../Posts';
 
 @Component({
   selector: 'app-textframe',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TextframeComponent implements OnInit {
 
-  constructor() { }
+  posts: Posts[] = [];
+
+  constructor(private textService: TextserviceService) { }
 
   ngOnInit(): void {
+    this.textService.getText().subscribe((posts) => (this.posts = posts));
   }
 
 }
