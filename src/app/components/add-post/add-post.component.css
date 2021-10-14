@@ -1,0 +1,24 @@
+.add-post {
+  color: lime;
+  font-family: Optima, sans-serif;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.input {
+  background-color: black;
+  color: violet;
+  border: 1px solid lime;
+  padding: 8px;
+  width: 40%;
+}
+
+
+.save-post {
+  background-color: black;
+  color: lime;
+  border: 1px solid lime;
+  padding: 8px;
+  width: 10%;
+}
