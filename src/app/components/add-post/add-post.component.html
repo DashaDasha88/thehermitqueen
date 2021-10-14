@@ -1,11 +1,11 @@
-<div class="add-post">
+<div class="add-post" (ngSubmit)="onSubmit()">
 
   <form>
     <div>
-      <input type="text" name="text" id="post" placeholder="Post something..." class="input">
+      <input type="text" name="text" id="post" placeholder="Post something..." class="input" [(ngModel)]="text">
     </div>
 
-    <input type="submit" value="Save" class="btn btn-block" class="save-post" />
+    <input type="submit" value="Save" class="save-post" />
   </form>
 
 </div>

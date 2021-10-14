@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Post } from 'src/app/Post';
 
 @Component({
   selector: 'app-add-post',
@@ -7,9 +8,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddPostComponent implements OnInit {
 
+  @Output() onAddPost: EventEmitter<Post> = new EventEmitter;
+
+  text: string = "";
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(){
+
+    console.log(this.text);
+
+    // const newPost = {
+    //   text: this.text
+    // };
+
+    // this.onAddPost.emit(newPost);
+
+    // this.text = ''; //this should clear the form after you post
   }
 
 }
