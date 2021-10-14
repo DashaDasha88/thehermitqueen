@@ -14,7 +14,7 @@ export class PostsParentComponent implements OnInit {
   constructor(private postService: PostsService) { }
 
   ngOnInit(): void {
-    this.posts = this.postService.getPosts();
+    this.postService.getPosts().subscribe((posts) => this.posts = posts);
   }
 
 }

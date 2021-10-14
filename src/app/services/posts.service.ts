@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable, of } from 'rxjs';
 import { POSTS } from '../mock-posts';
 import { Post } from '../Post';
 
@@ -7,9 +9,11 @@ import { Post } from '../Post';
 })
 export class PostsService {
 
-  constructor() { }
+  private apiUrl = 'http://localhost:5000/posts';
 
-  getPosts(): Post[] {
-    return POSTS;
+  constructor(private http:HttpClient) { }
+
+  getPosts(): Observable<Post[]> {
+    return this.http.get<Post[]>(this.apiUrl);
   }
 }
