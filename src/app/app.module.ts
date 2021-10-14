@@ -3,26 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
-import { PostService } from './services/post.service';
+import { PostsService } from './services/posts.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { PostsParentComponent } from './components/posts-parent/posts-parent.component';
 import { PostsComponent } from './components/posts/posts.component';
-import { PostsparentComponent } from './components/postsparent/postsparent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
+    PostsParentComponent,
     PostsComponent,
-    PostsparentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [PostService],
+  providers: [PostsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
