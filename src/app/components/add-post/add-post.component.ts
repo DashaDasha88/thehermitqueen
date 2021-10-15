@@ -12,6 +12,8 @@ export class AddPostComponent implements OnInit {
 
   text: string = "";
 
+  title: string = "Seriously, Dasha?"
+
   constructor() { }
 
   ngOnInit(): void {
@@ -19,7 +21,7 @@ export class AddPostComponent implements OnInit {
 
   onSubmit(){
 
-    console.log(this.text);
+    console.log(this.title);
 
     // const newPost = {
     //   text: this.text
