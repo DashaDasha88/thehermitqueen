@@ -12,7 +12,7 @@ export class AddPostComponent implements OnInit {
 
   text: string = "";
 
-  title: string = "Seriously, Dasha?"
+  title: string = "Can the title show up?"
 
   constructor() { }
 

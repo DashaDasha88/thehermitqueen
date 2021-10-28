@@ -1,6 +1,6 @@
-<div class="add-post" (ngSubmit)="onSubmit()">
+<div class="add-post">
 
-  <form>
+  <form #userForm="ngForm" (ngSubmit)="onSubmit()">
     <div>
       <input type="text" name="text" id="post" placeholder="Post something..." class="input" [(ngModel)]="text">
     </div>
