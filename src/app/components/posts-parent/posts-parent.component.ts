@@ -18,7 +18,8 @@ export class PostsParentComponent implements OnInit {
   }
 
   deletePost(post: Post) {
-    this.postService.deletePosts(post).subscribe(() => (this.posts = this.posts.filter((p) => p.id !== post.id)));
+    this.postService.deletePosts(post)
+    .subscribe(() => (this.posts = this.posts.filter((p) => p.id !== post.id)));
   }
 
    addPost(post : Post) {
