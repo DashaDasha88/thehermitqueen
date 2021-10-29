@@ -1,36 +1,8 @@
 {
   "posts": [
     {
-      "id": 1,
-      "text": "Sample text sample text sample text."
-    },
-    {
-      "id": 2,
-      "text": "I'm listening to Amputecture by The Mars Volta."
-    },
-    {
-      "id": 3,
-      "text": "Today is Tuesday and tomorrow is Wednesday."
-    },
-    {
-      "text": "o hai",
-      "id": 4
-    },
-    {
-      "text": "blee blee blee",
-      "id": 5
-    },
-    {
-      "text": "new post!",
-      "id": 6
-    },
-    {
-      "text": "lel",
-      "id": 7
-    },
-    {
-      "text": "The judge had previously thwarted the Biden administration’s efforts to formally end the program and ordered it to restart the Migrant Protection Protocols (MPP), also known as \"Remain in Mexico,\" which the government has been preparing to relaunch in mid-November. In a memo rescinding the policy for the second time filed in court on Friday, Department of Homeland Security Secretary Alejandro Mayorkas acknowledged that while MPP may have led to a reduction in irregular migration the humanitarian costs of the policy were too high.",
-      "id": 8
+      "text": "My delete functionality works!! My post functionality works!! Look at me go - I am making an app :D :D",
+      "id": 1
     }
   ]
 }

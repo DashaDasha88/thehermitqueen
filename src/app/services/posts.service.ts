@@ -22,6 +22,11 @@ export class PostsService {
     return this.http.get<Post[]>(this.apiUrl);
   }
 
+  deletePosts(post: Post): Observable<Post> {
+    const url = `${this.apiUrl}/${post.id}`
+    return this.http.delete<Post>(url);
+  }
+
   addPost(post: Post): Observable<Post> {
     return this.http.post<Post>(this.apiUrl, post, httpOptions);
   }
