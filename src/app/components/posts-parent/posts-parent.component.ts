@@ -17,8 +17,8 @@ export class PostsParentComponent implements OnInit {
     this.postService.getPosts().subscribe((posts) => this.posts = posts);
   }
 
-  // addPost(post : Post) {
-  //   console.log(post);
-  // }
+   addPost(post : Post) {
+     this.postService.addPost(post).subscribe((post) => (this.posts.push(post)));
+  }
 
 }

@@ -12,8 +12,6 @@ export class AddPostComponent implements OnInit {
 
   text: string = "";
 
-  title: string = "Can the title show up?"
-
   constructor() { }
 
   ngOnInit(): void {
@@ -21,15 +19,12 @@ export class AddPostComponent implements OnInit {
 
   onSubmit(){
 
-    console.log(this.title);
+    const newPost = {
+       text: this.text
+     };
 
-    // const newPost = {
-    //   text: this.text
-    // };
-
-    // this.onAddPost.emit(newPost);
-
-    // this.text = ''; //this should clear the form after you post
+    this.onAddPost.emit(newPost);
+    this.text = ''; //this should clear the form after you post
   }
 
 }
