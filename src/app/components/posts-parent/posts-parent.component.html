@@ -2,6 +2,6 @@
 ></app-add-post>
 
 <app-posts
-*ngFor = "let post of posts"
+*ngFor = "let post of posts.slice().reverse()"
 [post]="post"
 ></app-posts>
