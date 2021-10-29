@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { RouterModule, Routes } from '@angular/router';
 
 import { PostsService } from './services/posts.service';
 
@@ -12,6 +13,13 @@ import { HeaderComponent } from './components/header/header.component';
 import { PostsParentComponent } from './components/posts-parent/posts-parent.component';
 import { PostsComponent } from './components/posts/posts.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
+import { AboutComponent } from './components/about/about.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+
+const appRoutes: Routes = [
+  {path: '', component: PostsParentComponent},
+  {path: 'about', component: AboutComponent}
+]
 
 @NgModule({
   declarations: [
@@ -20,6 +28,8 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     PostsParentComponent,
     PostsComponent,
     AddPostComponent,
+    AboutComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +37,8 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     HttpClientModule,
     FormsModule,
     FontAwesomeModule,
+    RouterModule,
+    RouterModule.forRoot(appRoutes, {enableTracing: true}),
   ],
   providers: [PostsService],
   bootstrap: [AppComponent]

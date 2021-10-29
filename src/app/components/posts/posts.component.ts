@@ -1,6 +1,6 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { Post } from 'src/app/Post';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faTimes, faEdit } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-posts',
@@ -13,6 +13,7 @@ export class PostsComponent implements OnInit {
   @Output() onDeletePost: EventEmitter<Post> = new EventEmitter();
 
   faTimes = faTimes;
+  faEdit = faEdit;
 
   constructor() { }
 

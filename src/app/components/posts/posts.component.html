@@ -2,10 +2,18 @@
   {{ post.text }}
 
   <fa-icon
+  [icon]="faEdit"
+  [ngStyle]="{ 'color': 'orange', 'margin-left': '15px'}"
+  >
+  </fa-icon>
+
+  <fa-icon
   (click)="onDelete(post)"
-  [ngStyle]="{ color: 'orange' }"
+  [ngStyle]="{ 'color': 'orange', 'margin-left': '15px'}"
   [icon]="faTimes"
   >
   </fa-icon>
+
+
 
 </div>
