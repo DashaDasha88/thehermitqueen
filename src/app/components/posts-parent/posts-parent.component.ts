@@ -18,7 +18,8 @@ export class PostsParentComponent implements OnInit {
   }
 
    addPost(post : Post) {
-     this.postService.addPost(post).subscribe((post) => (this.posts.push(post)));
+     this.postService.addPost(post)
+     .subscribe((post) => (this.posts.push(post)));
   }
 
 }

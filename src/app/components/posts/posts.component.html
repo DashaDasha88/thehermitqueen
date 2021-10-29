@@ -1,4 +1,11 @@
 <div class="posts">
   {{ post.text }}
 
+  <fa-icon
+  (click)="onDelete(post)"
+  [ngStyle]="{ color: 'orange' }"
+  [icon]="faTimes"
+  >
+  </fa-icon>
+
 </div>
