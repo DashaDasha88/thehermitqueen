@@ -16,6 +16,7 @@ import { AddPostComponent } from './components/add-post/add-post.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FrontpageComponent } from './components/frontpage/frontpage.component';
+import { PostsIconsComponent } from './components/posts-icons/posts-icons.component';
 
 const appRoutes: Routes = [
   {path: '', component: FrontpageComponent},
@@ -33,6 +34,7 @@ const appRoutes: Routes = [
     AboutComponent,
     NavbarComponent,
     FrontpageComponent,
+    PostsIconsComponent,
   ],
   imports: [
     BrowserModule,

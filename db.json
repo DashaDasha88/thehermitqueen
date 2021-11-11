@@ -1,12 +1,8 @@
 {
   "posts": [
     {
-      "text": "My delete functionality works!! My post functionality works!! Look at me go - I am making an app :D :D",
+      "text": "the old delete still works the edit doesn't",
       "id": 1
-    },
-    {
-      "text": "traveling in time",
-      "id": 2
     }
   ]
 }
