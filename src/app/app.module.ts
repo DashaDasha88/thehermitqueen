@@ -15,10 +15,12 @@ import { PostsComponent } from './components/posts/posts.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
 import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { FrontpageComponent } from './components/frontpage/frontpage.component';
 
 const appRoutes: Routes = [
-  {path: '', component: PostsParentComponent},
-  {path: 'about', component: AboutComponent}
+  {path: '', component: FrontpageComponent},
+  {path: 'about', component: AboutComponent},
+  {path: 'posts', component: PostsParentComponent}
 ]
 
 @NgModule({
@@ -30,6 +32,7 @@ const appRoutes: Routes = [
     AddPostComponent,
     AboutComponent,
     NavbarComponent,
+    FrontpageComponent,
   ],
   imports: [
     BrowserModule,
